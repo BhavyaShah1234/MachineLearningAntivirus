@@ -6,4 +6,12 @@ To run the project:
 1) Clone the repository.
 2) Unzip the zip file.
 3) Go to the unzipped directory.
-4) If you have Python and Flask in your system then run the command <code>>>set FLASK_APP=app.py</code><br><code>>>flask run</code>
+4) If you have Python and Flask in your system then run the command
+<br>
+<code>
+  >>set FLASK_APP=app.py
+</code>
+<br>
+<code>
+  >>flask run
+</code>
