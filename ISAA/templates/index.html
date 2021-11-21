@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>ISAA Project</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    </head>
+    <body>
+        <h1>ANTIVIRUS</h1>
+        <form action="/" method="POST">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="prio">PRIO</span>
+                <input type="number" name="prio" class="form-control" id="prio" step="1" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="static-prio">STATIC PRIO</span>
+                <input type="number" name="static_prio" class="form-control" id="static-prio" step="1" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="free-area-cache">FREE AREA CACHE</span>
+                <input type="number" name="free_area_cache" class="form-control" id="free-area-cache" step="1" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="map-count">MAP COUNT</span>
+                <input type="number" name="map_count" class="form-control" id="map-count" step="1" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="total-vm">TOTAL VM</span>
+                <input type="number" name="total_vm" class="form-control" id="total-vm" step="1" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="shared-vm">SHARED VM</span>
+                <input type="number" name="shared_vm" class="form-control" id="shared-vm" step="1" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="reserved-vm">RESERVED VM</span>
+                <input type="number" name="reserved_vm" class="form-control" id="reserved-vm" step="1" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="min-flt">MIN FLT</span>
+                <input type="number" name="min_flt" class="form-control" id="min-flt" step="1" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="fs-excl-counter">FS EXCL COUNTER</span>
+                <input type="number" name="fs_excl_counter" class="form-control" id="fs-excl-counter" step="1" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="stime">STIME</span>
+                <input type="number" name="stime" class="form-control" id="stime" step="1" required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="gtime">GTIME</span>
+                <input type="number" name="gtime" class="form-control" id="gtime" step="1" required>
+            </div>
+            <br>
+            <button type="submit" name="submit" class="btn btn-primary btn-lg">SUBMIT</button>
+        </form>
+        <br>
+        <h3>{{ final }}</h3>
+    </body>
+</html>
